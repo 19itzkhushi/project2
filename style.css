@@ -1,0 +1,2021 @@
+
+
+/* hidden box styling part */
+
+
+
+/* hidden box styling part */
+
+.hidden {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 1.5s ease, transform 1.5s ease-in-out; /* Adjust the duration and timing function as needed */
+ position: relative;
+ top: 40px; 
+}
+
+
+/* Style the box */
+#box {
+  display: flex;
+  /* text-align: center; */
+  background-color: #f0f0f0;
+  max-width: 100%;
+  width: 100%; 
+  border-radius: 5px;
+  height: 300px;
+   position: absolute;
+  top: 80px;
+  left: 1px;
+
+  
+  background-image: url("image/black.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+#box img {
+  max-width: 100%;
+  height: 100%;
+ margin-top: 0px;
+}
+
+.firstbox{
+ 
+  width: 100%;
+  height: 480px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+
+.uppperbox{
+
+background: url("image/Sweet-background.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
+display: block;
+}
+
+
+/* navrbar styling */
+
+.navbar {
+
+  height: 500px;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  z-index: 10;
+}
+
+.navbar-header {
+  text-align: center;
+  padding: 10px;
+  color: black;
+  border-bottom: 1px solid #444;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar-menu li {
+
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #444;
+}
+
+.navbar-menu li a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar-menu li a:hover {
+cursor: pointer;
+  background-color: #f9f8f8;
+}
+
+.content {
+  margin-left: 250px; /* Same as the width of the navbar */
+  padding: 20px;
+}
+
+.para{
+  /* position: relative;
+  left: 250px;
+  top: 220px; */
+  width: 500px;
+ 
+  margin-left: 5px;
+ 
+}
+
+.profileimg{
+ 
+  height: 250px;
+  width: 200px;
+  margin-left: 25px;
+ 
+  
+}
+
+.profileimg img{
+  border: 2px solid black;
+ 
+}
+
+.profileimg:hover{
+  cursor: pointer;
+}
+
+/* flipbox styling */
+
+.innerimg {
+  width: 200px;
+  height: 250px;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: flip 2s linear;
+animation-timing-function: 2;
+animation-iteration-count: 3;
+}
+
+.animate{
+ 
+  transform-style: preserve-3d;
+animation: flip 2s  linear;
+animation-timing-function: 2;
+animation-iteration-count: 3;
+
+}
+
+
+
+
+.frontimg,
+.backimg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+}
+
+.frontimg {
+  background-color: #2980b9;
+}
+
+.backimg {
+  background-color: #e74c3c;
+  transform: rotateY(180deg);
+}
+
+@keyframes flip {
+  from {
+      transform: rotateY(0deg);
+  }
+  to {
+      transform: rotateY(360deg);
+  }
+}
+
+
+
+.mainbox{  
+height: 620px;
+text-align: center;
+background: url("image/sandcandy.jpg");
+background-position-x: 60% ;
+background-position-y: 54% ;
+background-size: cover;
+background-repeat: no-repeat;
+background-color: #502a01;
+padding-top: 20px;
+transition: height 0.3s ease;
+justify-content: center;
+align-items: center;
+}
+.extra{
+
+height: 0px;
+background: linear-gradient(to right,rgb(162, 110, 119),#A95700,rgb(162, 110, 119));
+background-color: #A95700; 
+transition: all 0.2s;
+
+
+}
+.new{
+height: 0px;
+transition: all 0.2s ease;
+}
+
+
+.mainbox h1{
+
+margin-top: 10px;
+
+}
+
+.first{
+
+  animation: jump 5s ease infinite;
+
+}
+
+
+.sticker1{
+  height: 120px;
+  width: 120px;
+   position: relative;
+  left: 200px;
+bottom: 20px;
+  
+}
+
+
+.sticker1:hover .first{
+
+cursor: pointer;
+}
+
+/* jump ball */
+
+@keyframes jump {
+  0% {
+      transform: translateX(0) rotate(0deg); /* Start at the left and initial rotation */
+    }
+    50% {
+      transform: translateX(400px) rotate(360deg); /* Move to the right and complete one rotation */
+    }
+    
+}
+
+.aboutme{
+
+  
+  position: relative;
+  top: 180px;
+ 
+  margin-top: 2px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: none;
+    margin-bottom: 140px;
+  
+ 
+}
+
+
+.trainnew{
+position: absolute;
+left: 750px; /* Initial position */
+width: 100px;
+height: 100px;
+
+}
+
+@keyframes moveTrain {
+0% {
+    left: 750px;
+    
+}
+
+100%{
+  left: -200px;
+ 
+}
+
+
+}
+
+.move-left {
+animation: moveTrain 17s forwards infinite;
+ /* Animation effect */
+}
+
+
+.aboutme h1{
+  margin-top: 30px;
+position: absolute;
+
+transition: transform 1s ;
+font-family: cursive;
+font-size: 28px;
+color: rgb(254, 252, 252);
+}
+
+.aboutme :hover{
+cursor: pointer;
+}
+
+.candy{
+
+transition: transform 2s;
+ }
+
+
+
+/* //train moving */
+
+
+
+
+
+
+
+
+
+@keyframes flipped {
+
+from {
+  transform: rotateX(0deg);
+}
+to {
+  transform: rotateX(360deg);
+}
+}
+
+.aboutme img:hover{
+
+    cursor: pointer; 
+  
+}
+
+
+
+
+#firsth11{
+  transition: all 5s ease-in;
+
+ 
+}
+
+
+/* aboutme hidden box */
+
+.hidden-box1 {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  transition: width 0.5s ease, height 0.5s ease;
+  border: none;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* Visible state for the box */
+.visible-box {
+
+  width: 100%;
+  height: 1390px;
+  background: linear-gradient(to right,#502a01,#7B3F00,rgb(162, 110, 119));
+  border: none;
+  transition: all 3s ease-in;
+ 
+}
+
+.visibledecor{
+  width: 100%;
+  background: linear-gradient(to right,#7B3F00,#7B3F00,rgb(162, 110, 119));
+ 
+}
+.mybox{
+  width: 100%;
+  position: absolute;
+  background: url("image/partypopper.gif"); 
+ 
+}
+
+/* //about me box styling */
+
+.firstmnbox{
+
+  border: 2px solid white;
+   margin-top: 70PX;
+  text-align: left;
+  margin-left: 200px;
+
+}
+.barchart{
+  width: 50%;
+}
+
+.content{
+  
+  width: 100%;
+  margin-left: 0px;
+  padding: 0px;
+  text-align: left;
+  color: white;
+}
+
+.para2{
+  width: 100%;
+ border-bottom: 2px double white;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.innercontent{
+  
+  display: flex;
+  padding: 10px;
+}
+
+.contentbox3{
+
+  display: flex;
+  padding-top: 20px;
+  margin-top: 50px;
+}
+
+.education{
+  padding: 10px;
+
+  margin: 10px;
+  background-color: #884905;
+}
+
+.experience{
+  padding: 10px;
+  margin: 10px;
+  background-color: #9c5408;
+}
+
+.para2{
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.thirdbox{
+ 
+  text-align: center;
+   height: 1150px;
+  background: linear-gradient(to right,#043c5a,#B0D6F5);
+
+}
+
+.projects{
+ 
+  height: 0;
+  overflow: hidden;
+  
+background-position-y: 45%;
+  color: white;
+  padding: 0 20px;
+  transition: height 3s  ease-in;
+}
+
+
+
+
+.horse{
+  height: 600px;
+  width: 400px;
+  position: absolute;
+  top: 200px;
+  left: 900px;
+  animation: mermaid 13s infinite;
+}
+
+.ocean{
+  margin-top: 30px; 
+  height:500px;
+   width:100%;
+}
+
+
+@keyframes mermaid {
+  0% {
+      left: 900px;
+      
+  }
+ 
+  100%{
+    left: -200px;
+   
+  }
+}
+
+
+
+.swipe{
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: -65px;
+  left: 850px;
+
+}
+
+
+.innerpr{
+  margin-top: 40px;
+
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.para p{
+  font-size: 17px;
+}
+
+.projects p {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.pr1{
+  margin: 20px;
+  height: 300px;
+  width: 300px;
+  border: 3px solid black;
+  transition: all 3s ease;
+}
+
+.pr1:hover{
+  cursor: pointer;
+ transform: scale(1.1);
+
+}
+.pr2{
+  margin: 20px;
+  height: 300px;
+  width: 300px;
+  border: 3px solid black;
+  transition: all 3s ease;
+}
+
+.pr2:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.boat{
+ 
+ height: 645px;
+
+background-image: url("image/new\ main\ walpaper.jpg");
+background-size: cover;
+}
+
+.sail{
+  position: relative;
+  bottom: 600px;
+  right: 600px;
+  animation: moveboat 13s infinite;
+  height:400px; 
+  width:350px;
+}
+
+
+
+@keyframes moveboat {
+0% {
+    right: 600px;
+    
+}
+
+100%{
+  right: -450px;
+ 
+}
+}
+
+
+.contentbox3{
+  height: 400px;
+ 
+}
+
+.fourthbox{
+
+height: 700px;
+width: 100%;
+text-align: center;
+background: linear-gradient(to right,#043c5a,#B0D6F5);
+}
+
+
+/* //contact style */
+
+
+
+.contact-left{
+flex-basis: 35%;
+}
+.contact-right{
+flex-basis: 60%;
+}
+.contact-left p{
+margin-top: 30px;
+}
+.contact-left p i{
+color: #00e5ff;
+margin-right: 15px;
+font-size: 25px;
+}
+.social-icons{
+margin-top: 30px;
+
+}
+.social-icons a{
+text-decoration: none;
+font-size: 30px;
+margin-right: 15px;
+color: #ababab;
+display: inline-block;
+transition: transform 0.5s;
+}
+.social-icons a:hover{
+filter: brightness(2) sepia(1) hue-rotate(180deg);
+transform: translateY(-5px);
+}
+
+.btn.btn2{
+display: inline-block;
+background: #00e5ff;
+
+}
+.contact-right form{
+width: 100%;
+}
+form input , form textarea{
+width: 100%;
+outline: none;
+border: 0;
+background: #262626;
+padding: 15px;
+margin: 15px 0;
+color: #fff;
+font-size: 18px;
+border-radius: 6px;
+}
+form .btn2{
+padding: 14px 60px;
+font-size: 18px;
+margin-top: 20px;
+cursor: pointer;
+}
+.copyright{
+width: 100%;
+text-align: center;
+padding: 25px 0;
+background: #262626;
+font-weight: 300;
+color: white;
+margin-top: 20px;
+}
+nav .menu{
+display: none;
+}
+
+#contact-section{
+
+
+  height: 0;
+  overflow: hidden;
+  background: url("image/dolphin.gif"); 
+ background-repeat: no-repeat;
+background-size: cover;
+background-position-y: 45%;
+  color: white;
+  padding: 0 20px;
+  transition: height 5s  ease-in;
+}
+
+.container{
+  margin-top: 70px;
+}
+
+.info1{
+  opacity: 1;
+}
+
+
+
+
+  /* //responsive */
+
+
+  @media(max-width:2611px){
+   
+    .para p{
+      font-size: 20px;
+    }
+
+.firstbox{
+  height: 650px;
+}
+
+
+.mainbox{
+  height: 720px;
+}
+
+.boat{
+  height: 745px;
+}
+.ocean{
+  height: 600px;
+}
+
+.thirdbox{
+  height: 1340px;
+}
+
+.fourthbox{
+  height: 800px;
+}
+
+#contact-section{
+ padding-bottom: 50px;
+ padding-top: 50px;
+}
+
+  }
+
+
+  @media (max-width:1351px){
+
+    .firstbox{
+      height: 480px;
+    }
+
+    .mainbox{
+      height: 620px;
+    }
+
+    .boat{
+      height: 645px;
+    }
+
+    .ocean{
+      height: 500px;
+    }
+
+    .thirdbox{
+      height: 1150px;
+    }
+    
+    .fourthbox{
+      height: 700px;
+    }
+
+    #contact-section{
+      height: 547.67px;
+    }
+
+    .sail{
+    
+      position: relative;
+      left: -350px;
+      animation: moveboat 10s infinite;
+    }
+    
+      
+    @keyframes moveboat {
+      0% {
+          left: -350px;
+          
+      }
+     
+      100%{
+        left: 370px;
+       
+      }
+    }
+
+  }
+
+
+@media (max-width:1244px){
+  .sail{
+    
+    position: relative;
+    left: -350px;
+    animation: moveboat 10s infinite;
+  }
+  
+    
+  @keyframes moveboat {
+    0% {
+        left: -350px;
+        
+    }
+   
+    100%{
+      left: 370px;
+     
+    }
+  }
+  
+
+}
+
+
+
+@media (max-width:1140px){
+  .navbar{
+    max-width: 450px;
+      width: 100%;
+      position: fixed;
+      height: auto;
+      
+     
+  }
+  .navbar-header h2{
+    font-size: 35px;
+  }
+  .navbar-header {
+  margin-right: 200px;
+  }
+
+  .navbar-menu{
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+  .content {
+      margin-left: 0;
+      padding: 10px;
+  }
+
+
+  .navbar-menu li a {
+    padding: 1px;
+      font-size: 20px;
+  }
+  .navbar-header {
+      font-size: 25px;
+  }
+
+
+  .para{
+    margin-top: 40px;
+  }
+
+
+  .trainnew{
+    position: relative;
+    left: 600px;
+    width: 100px;
+    height: 100px;
+   
+   }
+  
+   @keyframes moveTrain {
+    0% {
+        left: 600px;
+        
+    }
+   
+    100%{
+      left: -50px;
+     
+    }
+    
+  }
+
+  
+  @keyframes moveboat {
+    0% {
+        left: -250px;
+        
+    }
+   
+    100%{
+      left: 250px;
+     
+    }
+  }
+  
+    
+  .boat{
+    height: 580px;
+   
+   }
+   .ocean{
+     width: 100%;
+   }
+   
+   .projects{
+     margin-top: 50px;
+   }
+ 
+  
+
+ 
+}
+
+
+
+  @media (max-width :920px){
+
+    .navbar{
+      max-width: 450px;
+        width: 100%;
+        position: fixed;
+        height: auto;
+        
+       
+    }
+    .navbar-header h2{
+      font-size: 35px;
+    }
+    .navbar-header {
+    margin-right: 200px;
+    }
+  
+    .navbar-menu{
+   
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+  }
+    .content {
+        margin-left: 0;
+        padding: 10px;
+    }
+  
+  
+    .navbar-menu li a {
+      padding: 1px;
+        font-size: 20px;
+    }
+    .navbar-header {
+        font-size: 25px;
+    }
+  
+  
+    .para {
+      font-size: 20px;
+      
+     }
+     .para h1{
+       margin-top: 100px;
+      font-size: 30px;
+      
+     }
+
+ 
+     .innerimg{
+      /*== height: 580px;
+      width: 100px;
+      position: absolute;
+      top: 100px;
+    right: 40px;
+   margin: 20px; */
+    position: relative;
+   top: 100px;
+    }
+  
+    .frontimg{
+      height: 200px;
+      width: 150px;
+      margin-left: 20px;
+    }
+  
+    .backimg{
+     height: 200px;
+     width: 150px;
+      margin-left: 20px;
+    }
+    
+  
+    .sticker1 img{
+      height: 100px;
+      width: 100px;
+      
+    }
+  
+    .sticker1 {
+      position: relative;
+      left: 0px;
+      bottom: 0px;
+      top: 10px;
+    }
+  
+    @keyframes jump {
+      0% {
+          transform: translateX(0) rotate(0deg); 
+        }
+        50% {
+          transform: translateX(440px) rotate(360deg); 
+        }
+        
+    }
+  
+  
+    .candy1{
+      height: 230px;
+      width: 280px;
+    }
+  
+    .trainnew{
+      position: absolute;
+      left: 400px;
+      width: 100px;
+      height: 100px;
+     
+     }
+    
+     @keyframes moveTrain {
+      0% {
+          left: 400px;
+          
+      }
+     
+      100%{
+        left: -50px;
+       
+      }
+      
+    
+    }
+    
+    .move-left {
+      animation: moveTrain 12s forwards infinite;
+      
+    }
+  
+  
+    .candy{
+     
+      height: 300px;
+      width: 300px;
+    }
+    .aboutme{
+      margin-top: 70px;
+    }
+  
+    .firstmnbox{
+  
+      border: 2px solid white;
+       margin-top: 70PX;
+      text-align: left;
+      margin-left: 0px;
+      height: auto;
+    
+    }
+  
+    .contentbox3{
+   
+      height: auto;
+    }
+  
+    canvas{
+      height: 600px;
+      width: 550px;
+    }
+    .barchart{
+      width: 100%;
+    }
+  
+    .education{
+      padding: 10px;
+      height: auto;
+      margin: 5px;
+      background-color: #884905;
+    }
+  
+    .education p{
+      font-size: 10px;
+    }
+    .experience p{
+      font-size: 10px;
+    }
+  
+    .experience{
+      height: auto;
+      padding: 10px;
+      margin: 5px;
+      background-color: #9c5408;
+    }
+  
+  
+   .sail{
+   
+    animation: moveboat 10s infinite;
+  }
+  
+  @keyframes moveboat {
+    0% {
+        left: -250px;
+        
+    }
+   
+    100%{
+      left: 200px;
+     
+    }
+  }
+  
+  
+  
+  .boat{
+   height: 580px;
+  
+  }
+  .ocean{
+    width: 100%;
+  }
+  
+  .projects{
+    margin-top: 50px;
+  } 
+  
+
+    }
+
+
+@media (max-width:720px){
+
+
+  .navbar{
+    max-width: 450px;
+      width: 100%;
+      position: fixed;
+      height: auto;
+      
+     
+  }
+  .navbar-header h2{
+    font-size: 35px;
+  }
+  .navbar-header {
+  margin-right: 200px;
+  }
+
+  .navbar-menu{
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+  .content {
+      margin-left: 0;
+      padding: 10px;
+  }
+
+
+  .navbar-menu li a {
+    padding: 1px;
+      font-size: 15px;
+  }
+  .navbar-header {
+      font-size: 15px;
+  }
+
+
+  .para {
+   font-size: 18px;
+   
+  }
+  .para h1{
+    margin-top: 100px;
+   font-size: 27px;
+   
+  }
+
+
+  .innerimg{
+    height: 180px;
+    width: 130px;
+    position: absolute;
+    top: 100px;
+  right: 40px;
+ margin: 20px;
+  }
+
+  .frontimg{
+    height: 180px;
+    width: 130px;
+    margin-left: 20px;
+  }
+
+  .backimg{
+    height: 180px;
+    width: 130px;
+    margin-left: 20px;
+  }
+  
+
+  .sticker1 img{
+    height: 100px;
+    width: 100px;
+    
+  }
+
+  .sticker1 {
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    top: 10px;
+  }
+
+  @keyframes jump {
+    0% {
+        transform: translateX(0) rotate(0deg); /* Start at the left and initial rotation */
+      }
+      50% {
+        transform: translateX(340px) rotate(360deg); /* Move to the right and complete one rotation */
+      }
+      
+  }
+
+
+  .candy1{
+    height: 230px;
+    width: 280px;
+  }
+
+  .trainnew{
+    position: absolute;
+    left: 400px; /* Initial position */
+    width: 100px;
+    height: 100px;
+   
+   }
+  
+   @keyframes moveTrain {
+    0% {
+        left: 400px;
+        
+    }
+   
+    100%{
+      left: -50px;
+     
+    }
+    
+  
+  }
+  
+  .move-left {
+    animation: moveTrain 12s forwards infinite;
+     /* Animation effect */
+  }
+
+
+  .candy{
+   
+    height: 250px;
+    width: 250px;
+  }
+  .aboutme{
+    margin-top: 70px;
+  }
+
+  .firstmnbox{
+
+    border: 2px solid white;
+     margin-top: 70PX;
+    text-align: left;
+    margin-left: 0px;
+    height: auto;
+  
+  }
+
+  .hidden-box1{
+    height: auto;
+   
+  }
+  .mybox{
+    background: none;
+  }
+
+  .contentbox3{
+    border: 2px solid rebeccapurple;
+    height: auto;
+  }
+
+  canvas{
+    height: 600px;
+    width: 550px;
+  }
+  .barchart{
+    width: 100%;
+  }
+
+  .education{
+    padding: 10px;
+    height: auto;
+    margin: 5px;
+    background-color: #884905;
+  }
+
+  .education p{
+    font-size: 10px;
+  }
+  .experience p{
+    font-size: 10px;
+  }
+
+  .experience{
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+    background-color: #9c5408;
+  }
+
+
+ .sail{
+  height: 250px;
+  width: 200px;
+  position: relative;
+  bottom: 480px;
+  left: -250px;
+  animation: moveboat 10s infinite;
+}
+
+@keyframes moveboat {
+  0% {
+      left: -250px;
+      
+  }
+ 
+  100%{
+    left: 220px;
+   
+  }
+}
+
+
+
+.boat{
+ height: 580px;
+
+}
+.ocean{
+  width: 100%;
+}
+
+.projects{
+  margin-top: 50px;
+}
+
+.pr1{
+  height: 270px;
+  width: 240px;
+}
+.pr2{
+  height: 270px;
+  width: 240px;
+}
+
+.info1{
+ opacity: 1;
+}
+
+.info1 img{
+  height: 35px;
+  width: 35px;
+}
+
+.info img{
+  height: 35px;
+  width: 35px;
+  padding: 5px;
+}
+
+.contact-right{
+margin-top: 20px;
+border: 3px solid black;
+padding-bottom: 20px;
+margin-bottom: 20px;
+
+}
+
+.contact-left h1{
+ font-size: 35px;
+}
+
+
+.row{
+padding: 0px;
+margin: 0px;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+width: 550px;
+
+}
+
+.copyright{
+width: auto;
+padding: 0px;
+margin: 0px;
+margin-top: 2px;
+padding: 10px;
+
+}
+
+#contact-section{
+background-size: cover;
+background-position-x: 20%;
+
+}
+
+
+
+
+}
+
+
+
+
+@media (max-width:600px){
+
+
+  .navbar{
+    max-width: 450px;
+      width: 100%;
+      position: fixed;
+      height: auto;
+      
+     
+  }
+  .navbar-header h2{
+    font-size: 25px;
+  }
+  .navbar-header {
+  margin-right: 200px;
+  }
+
+  .navbar-menu{
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+  .content {
+      margin-left: 0;
+      padding: 10px;
+  }
+
+
+  .navbar-menu li a {
+    padding: 1px;
+      font-size: 15px;
+  }
+  .navbar-header {
+      font-size: 15px;
+  }
+
+
+  .para {
+   font-size: 15px;
+   
+  }
+  .para h1{
+    margin-top: 100px;
+   font-size: 20px;
+   
+  }
+
+
+  .innerimg{
+    height: 150px;
+    width: 100px;
+    position: absolute;
+    top: 100px;
+  right: 40px;
+  }
+
+  .frontimg{
+    height: 150px;
+    width: 100px;
+   
+  }
+
+  .backimg{
+    height: 150px;
+    width: 100px;
+    
+  }
+  
+
+  .sticker1 img{
+    height: 100px;
+    width: 100px;
+    
+  }
+
+  .sticker1 {
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    top: 10px;
+  }
+
+  @keyframes jump {
+    0% {
+        transform: translateX(0) rotate(0deg); /* Start at the left and initial rotation */
+      }
+      50% {
+        transform: translateX(270px) rotate(360deg); /* Move to the right and complete one rotation */
+      }
+      
+  }
+
+
+  .candy1{
+    height: 150px;
+    width: 180px;
+  }
+
+  .trainnew{
+    position: absolute;
+    left: 250px; /* Initial position */
+    width: 100px;
+    height: 100px;
+   
+   }
+  
+   @keyframes moveTrain {
+    0% {
+        left: 250px;
+        
+    }
+   
+    100%{
+      left: -50px;
+     
+    }
+    
+  
+  }
+  
+  .move-left {
+    animation: moveTrain 12s forwards infinite;
+     /* Animation effect */
+  }
+
+
+  .candy{
+    height: 250px;
+    width: 250px;
+  }
+
+  .firstmnbox{
+
+    border: 2px solid white;
+     margin-top: 70PX;
+    text-align: left;
+    margin-left: 0px;
+    height: auto;
+  
+  }
+
+  .hidden-box1{
+    height: auto;
+   
+  }
+  .mybox{
+    background: none;
+  }
+
+  .contentbox3{
+    border: 2px solid rebeccapurple;
+    height: auto;
+  }
+
+  canvas{
+    height: 600px;
+    width: 550px;
+  }
+  .barchart{
+    width: 100%;
+  }
+
+  .education{
+    padding: 10px;
+    height: auto;
+    margin: 5px;
+    background-color: #884905;
+  }
+
+  .education p{
+    font-size: 10px;
+  }
+  .experience p{
+    font-size: 10px;
+  }
+
+  .experience{
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+    background-color: #9c5408;
+  }
+
+
+ .sail{
+  height: 250px;
+  width: 200px;
+  position: relative;
+  bottom: 480px;
+  left: -150px;
+  animation: moveboat 10s infinite;
+}
+
+@keyframes moveboat {
+  0% {
+      left: -150px;
+      
+  }
+ 
+  100%{
+    left: 125px;
+   
+  }
+}
+
+
+
+.boat{
+ height: 580px;
+
+}
+.ocean{
+  width: 100%;
+}
+
+.projects{
+  margin-top: 50px;
+}
+
+.pr1{
+  height: 170px;
+  width: 240px;
+}
+.pr2{
+  height: 170px;
+  width: 240px;
+}
+
+.info1{
+ opacity: 1;
+}
+
+.info1 img{
+  height: 35px;
+  width: 35px;
+}
+
+.info img{
+  height: 35px;
+  width: 35px;
+  padding: 5px;
+}
+
+.contact-right{
+margin-top: 20px;
+border: 3px solid black;
+padding-bottom: 20px;
+margin-bottom: 20px;
+
+}
+
+.contact-left h1{
+ font-size: 30px;
+}
+
+
+.row{
+padding: 0px;
+margin: 0px;
+display: flex;
+}
+
+.container{
+width: 550px;
+}
+
+.copyright{
+width: auto;
+padding: 0px;
+margin: 0px;
+margin-top: 2px;
+padding: 10px;
+
+}
+
+#contact-section{
+background-size: cover;
+background-position-x: 20%;
+}
+
+
+
+}
+
+
+
+
+  @media (max-width:440px){
+    .navbar{
+      max-width: 350px;
+        width: 100%;
+        position: fixed;
+        height: auto;
+        
+       
+    }
+    .navbar-header h2{
+      font-size: 15px;
+    }
+    .navbar-header {
+    margin-right: 200px;
+    }
+
+    .navbar-menu{
+   
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+  }
+    .content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+
+    .navbar-menu li a {
+      padding: 1px;
+        font-size: 10px;
+    }
+    .navbar-header {
+        font-size: 10px;
+    }
+
+
+    .para {
+     margin-top: 20px;
+     font-size: 15px;
+
+    width: auto;
+     
+    }
+    .para h1{
+     font-size: 20px;
+     
+    }
+
+.profileimg{
+  
+  margin-left: 150px;
+}
+
+.innerimg{
+  position: absolute;
+  top: 70px;
+  
+  margin-left: 150px;
+  
+}
+
+.animate{
+  animation: none;
+}
+
+    
+
+    .sticker1 img{
+      height: 70px;
+      width: 70px;
+      
+    }
+
+    .sticker1 {
+      position: relative;
+      left: 0px;
+      bottom: 0px;
+      top: 30px;
+    }
+
+    @keyframes jump {
+      0% {
+          transform: translateX(0) rotate(0deg); /* Start at the left and initial rotation */
+        }
+        50% {
+          transform: translateX(270px) rotate(360deg); /* Move to the right and complete one rotation */
+        }
+        
+    }
+
+
+    .candy1{
+      height: 150px;
+      width: 180px;
+    }
+
+    .trainnew{
+      position: absolute;
+      left: 200px; /* Initial position */
+      width: 100px;
+      height: 100px;
+     
+     }
+    
+     @keyframes moveTrain {
+      0% {
+          left: 200px;
+          
+      }
+     
+      100%{
+        left: -50px;
+       
+      }
+      
+    
+    }
+    
+    .move-left {
+      animation: moveTrain 12s forwards infinite;
+       /* Animation effect */
+    }
+
+
+    .candy{
+      height: 250px;
+      width: 250px;
+    }
+
+    .firstmnbox{
+
+      border: 2px solid white;
+       margin-top: 70PX;
+      text-align: left;
+      margin-left: 0px;
+      height: auto;
+    
+    }
+
+
+    .projects{
+      margin-top: 40px;
+    }
+
+
+    .hidden-box1{
+      height: auto;
+     
+    }
+    .mybox{
+      background: none;
+    }
+
+    .contentbox3{
+      border: 2px solid rebeccapurple;
+      height: auto;
+    }
+
+    canvas{
+      height: 600px;
+      width: 550px;
+    }
+    .barchart{
+      width: 100%;
+    }
+
+    .education{
+      padding: 10px;
+      height: auto;
+      margin: 5px;
+      background-color: #884905;
+    }
+
+    .education p{
+      font-size: 10px;
+    }
+    .experience p{
+      font-size: 10px;
+    }
+  
+    .experience{
+      height: auto;
+      padding: 10px;
+      margin: 5px;
+      background-color: #9c5408;
+    }
+  
+
+   .sail{
+    height: 250px;
+    width: 200px;
+    position: relative;
+    bottom: 480px;
+    left: -150px;
+    animation: moveboat 10s infinite;
+  }
+
+  @keyframes moveboat {
+    0% {
+        left: -150px;
+        
+    }
+   
+    100%{
+      left: 75px;
+     
+    }
+  }
+
+
+
+  .boat{
+   height: 580px;
+ 
+  }
+  .ocean{
+    width: 100%;
+  }
+
+  .pr1{
+    height: 150px;
+    width: 200px;
+  }
+  .pr2{
+    height: 150px;
+    width: 200px;
+  }
+
+  .info1 img{
+    height: 35px;
+    width: 35px;
+  }
+
+  .info img{
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+  }
+
+.contact-right{
+  margin-top: 20px;
+  border: 3px solid black;
+ padding-bottom: 20px;
+ margin-bottom: 20px;
+
+ 
+}
+.row{
+ padding: 0px;
+ margin: 0px;
+}
+
+.container{
+  width: 500px;
+}
+
+.copyright{
+  width: auto;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 2px;
+  padding: 10px;
+  
+}
+
+#contact-section{
+  background-size: cover;
+  background-position-x: 20%;
+}
+
+ }
+
+
+
