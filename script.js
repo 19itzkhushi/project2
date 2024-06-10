@@ -135,7 +135,7 @@ function handleScroll1() {
 
 
     if (scrollPosition1 > hiddenBoxTop1 + spacerHeight1 / 2) {
-        hiddenBox1.style.height = 'auto';
+        hiddenBox1.style.height = '620px';
         hiddenBoxP1.style.opacity = '1';
         // Adjust to desired height
      
@@ -205,9 +205,9 @@ ScrollReveal({
   delay: 200
   });
   ScrollReveal().reveal('.trainnew ,.para ,.sticker1,.profileimg,.eh1,.aboutme', { origin: 'top' });
-  ScrollReveal().reveal(' .navbar ,.contact-left', { origin: 'left' });
+  ScrollReveal().reveal(' .navbar', { origin: 'left' });
   ScrollReveal().reveal('', { origin: 'bottom' });
-  ScrollReveal().reveal('.contact-right', { origin: 'right' });
+  ScrollReveal().reveal('', { origin: 'right' });
 
 
  
