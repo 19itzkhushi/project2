@@ -204,10 +204,10 @@ ScrollReveal({
   duration: 2000,
   delay: 200
   });
-  ScrollReveal().reveal('.trainnew ,.para ,.sticker1,.profileimg,.eh1,.aboutme,.h11,.h12', { origin: 'top' });
-  ScrollReveal().reveal(' .navbar ,.contact-left,.pr1', { origin: 'left' });
+  ScrollReveal().reveal('.trainnew ,.para ,.sticker1,.profileimg,.eh1,.aboutme', { origin: 'top' });
+  ScrollReveal().reveal(' .navbar ,.contact-left', { origin: 'left' });
   ScrollReveal().reveal('', { origin: 'bottom' });
-  ScrollReveal().reveal('.contact-right,.pr2', { origin: 'right' });
+  ScrollReveal().reveal('.contact-right', { origin: 'right' });
 
 
  
